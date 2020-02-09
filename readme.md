@@ -1,6 +1,6 @@
 # Frontloops Challenge
 
-[Frontloops] is a front-end challenge site by Dimitry Belyaev, a Sr. FE Dev at Booking.com. As part of the challenge you get an image/video file of the final design then off you code.
+[Frontloops](https://frontloops.io) is a front-end challenge site by Dimitry Belyaev, a Sr. FE Dev at Booking.com. As part of the challenge you get an image/video file of the final design then off you code.
 
 I've decided to hone my FE skills a bit whilst also **practicing some UX Design by also tweaking the designs** if and when needed.
 
@@ -10,9 +10,11 @@ To improve HTML and CSS skills.
 ### Day 1 - Plan Picker
 
 The original design:
+
 ![original design - plan picker](1-plan_picker/design/l1s1.png)
 
 My design:
+
 ![my design - plan picker](1-plan_picker/design/l1s1m.png)
 
 #### UX redesign
@@ -27,9 +29,11 @@ My design:
 ### Day 2 - Payment method picker
 
 The original design:
+
 ![original design - payment method picker](2-payment_method/design/l1s2.png)
 
-The original design:
+My design:
+
 ![my design - payment method picker](2-payment_method/design/l1s2m.png)
 
 #### UX redesign
