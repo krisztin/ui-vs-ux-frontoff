@@ -4,10 +4,14 @@
 
 I've decided to hone my FE skills a bit whilst also **practicing some UX Design by also tweaking the designs** if and when needed.
 
-## Markup
+## Markup challenges
 To improve HTML and CSS skills.
 
 ### Day 1 - Plan Picker
+
+🤖 [The code](1-plan_picker/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/1-plan_picker/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
 The original design:
 
@@ -23,10 +27,12 @@ My design:
 - slightly larger text (suggested base font-size was 14px 🔬 which is waaaay too tiny)
 - more contrasting font colour for the description
 
-🤖 [The code](1-plan_picker/)
-
 
 ### Day 2 - Payment method picker
+
+🤖 [The code](2-payment_method/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/2-payment_method/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
 The original design:
 
@@ -42,5 +48,3 @@ My design:
 - made the container narrower so the checkmark is closer to the label instead of miles away on the right
 - design called for all text to be uppercase which is hell on readability
 - checked label gets physically larger to give better feedback on it being selected
-
-🤖 [The code](2-payment_method/)
