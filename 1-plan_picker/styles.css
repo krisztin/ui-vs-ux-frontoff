@@ -1,5 +1,5 @@
 :root {
-  --blue: rgb(100, 28, 213);
+  --primary: rgb(100, 28, 213);
   font-size: 16px;
 }
 
@@ -68,15 +68,14 @@ body {
 
 h1 {
   color: #fff;
-  text-transform: uppercase;
   text-align: center;
   font-size: 2.2rem;
 }
 
 h2 {
   font-size: 2rem;
-  text-transform: uppercase;
-  color: var(--blue);
+  color: var(--primary);
+  margin-bottom: 0.5rem;
 }
 
 .plan-picker {
@@ -134,5 +133,5 @@ p.plan-description {
 }
 
 .plan .plan-price {
-  color: var(--blue);
+  color: var(--primary);
 }
