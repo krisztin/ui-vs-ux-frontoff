@@ -24,3 +24,19 @@ My design:
 🤖 [The code](1-plan_picker/)
 
 
+### Day 2 - Payment method picker
+
+The original design:
+![original design - payment method picker](2-payment_method/design/l1s2.png)
+
+The original design:
+![my design - payment method picker](2-payment_method/design/l1s2m.png)
+
+#### UX redesign
+
+- unchecked inputs' labels are still black; design suggested grey but that could potentially confuse users thinking the option is disabled
+- made the container narrower so the checkmark is closer to the label instead of miles away on the right
+- design called for all text to be uppercase which is hell on readability
+- checked label gets physically larger to give better feedback on it being selected
+
+🤖 [The code](2-payment_method/)
