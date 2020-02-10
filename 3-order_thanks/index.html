@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Thank you</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-container">
+      <div class="order-details">
+        <nav>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="home" class="site-logo"
+            ><h1 aria-hidden="true">SimpleWheels</h1></a
+          >
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="my account"
+            title="my account"
+            class="account-container"
+          >
+            <svg class="account-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 0 1-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 0 1-6 3.22z"
+              />
+            </svg>
+            <p><small>my account</small></p>
+          </a>
+        </nav>
+        <section>
+          <h1>Thank you!</h1>
+          <p class="message">
+            Thanks for your order
+            <a href="http://" target="_blank" rel="noopener noreferrer" data-orderID>#12345</a>,
+            your package will be on its way shortly.
+          </p>
+        </section>
+        <section class="order-summary">
+          <header>
+            <h1>Your order</h1>
+            <span class="order-table-headings row" aria-hidden="true">
+              <p class="col-6">Product name</p>
+              <p class="col-2 align--centre">Quantity</p>
+              <p class="col-2 align--right">Total</p>
+            </span>
+          </header>
+          <ul class="product-list">
+            <li class="product-list__item">
+              <div class="row" aria-hidden="true">
+                <p class="col-6">
+                  <span class="product-name">Chapelli Vintage Single Speed</span
+                  ><span class="product-price">£317</span>
+                </p>
+                <p class="align--centre col-2">1</p>
+                <p class="align--right col-2">£317</p>
+              </div>
+              <p class="a11ytxt">1, Chapelli Vintage Singe Speed, £317</p>
+            </li>
+            <li class="product-list__item">
+              <div class="row" aria-hidden="true">
+                <p class="col-6">
+                  <span class="product-name">Castelli Arenberg Gel Gloves</span>
+                  <span class="product-price">£39</span>
+                </p>
+                <p class="align--centre col-2">1</p>
+                <p class="align--right col-2">£39</p>
+              </div>
+              <p class="a11ytxt">1, Castelli Arenberg Gel Gloves, £39</p>
+            </li>
+          </ul>
+          <span class="order-total row">
+            <p class="col-8"><strong>Order total:</strong></p>
+            <p class="align--right col-2">£356</p>
+          </span>
+        </section>
+      </div>
+      <footer class="bg-bicycle">
+        <h2>Have a question?</h2>
+        <p>We are always here to help you. Get in touch:</p>
+        <ul class="contact-list">
+          <li>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:questions@simplewheels.com">questions@simplewheels.co.uk</a>
+            </p>
+          </li>
+          <li>
+            <p><strong>Call:</strong> +44 12345 222 222</p>
+          </li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
