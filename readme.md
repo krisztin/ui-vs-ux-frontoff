@@ -49,3 +49,54 @@ My design:
 - made the container narrower so the checkmark is closer to the label instead of miles away on the right
 - design called for all text to be uppercase which is hell on readability
 - checked label gets physically larger to give better feedback on it being selected
+
+### Day 3 - Order thank you page
+
+The original design:
+
+![original design - thank you page](3-order_thanks/design/l1s2.png)
+
+My design:
+
+![my design - thank you page](3-order_thanks/design/l1s2m.png)
+
+🤖 [The code](3-order_thanks/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/3-order_thanks/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+Information enrichment:
+
+- **'my account' label** for the account icon, because icon+label is superior to icon or label only.
+- **Thank you heading text** for the skimmers as a quick feedback that all is well.
+- **Headers for the order summary** 'table' (i.e. Product name, Quantitiy).
+- Quantity column... 🙄
+- **Individual price** displayed under the product's name.
+- A **CTA to get in touch**, just in case something went wrong or the user has a question about the order.
+
+Wanted to add:
+- Thumbnail image of the product
+
+Layout/accessibility:
+- **Moved the background image bicycle** so it doesn't overlap with the order details. It's positioned that it also never interferes with the `contact` section.
+- **Didn't use a table** for the summary due to accessibility concerns (not just the lack of a consistent way to be read by screen readers but how unpredictable tables are when it comes to sizing on smaller screens).
+- Each order item also has an **accessibility text paragraph that collates all the information** in the table/line into one single, uninterrupted paragraph.
+
+```html
+
+<!-- This garble below is hidden for screen readers to avoid confusion -->
+<div class="row" aria-hidden="true">
+  <p class="col-6">
+    <span class="product-name">Castelli Arenberg Gel Gloves</span>
+    <span class="product-price">£39</span>
+  </p>
+  <p class="align--centre col-2">1</p>
+  <p class="align--right col-2">£39</p>
+</div>
+
+<!-- Instead, screen readers will read this line -->
+<p class="a11ytxt">1, Castelli Arenberg Gel Gloves, £39</p>
+
+```
+
