@@ -9,104 +9,74 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!--
-  Made as part of a Frontloops - FE Challenge in which you get a video on the design and img assets then code away.
-  https://frontloops.io/ 
-  Slightly fiddled with the design to make it more user-friendly:
-  - unchecked input's labels are still black (design suggested grey but that could potentially confuse users thinking the option is disabled
-  - made the selector narrower so the checkmark is closer to the label instead of miles away on the right
-  - design called for all text to be uppercase which is hell on readability
-  - checked label gets physically larger to give better feedback on it being selected
-  - added 'Step 1 of 3' as a verbal (screen reader) feedback on length of form
-
-  original design: https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191023/frontloops/l1s2-paymeth/Loop_1_-_Step_2_i0wqbr.png
-  )
--->
-    <main>
-      <section class="payment-method">
-        <div class="step-indicator" data-step="1">
-          <span class="step step-1"></span>
-          <span class="step step-2"></span>
-          <span class="step step-3"></span>
-        </div>
-        <form action="">
-          <!-- Step #1 -->
-          <p class="step-text"><small>Step 1 of 3</small></p>
-          <fieldset>
-            <legend>Select payment method</legend>
-            <p>
-              <input
-                type="radio"
-                data-card="visa"
-                id="visa"
-                name="paymentMethod"
-                value="visa"
-                required
-              />
-              <label for="visa">
-                <img
-                  src="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/visa_zqzwtd.svg"
-                  alt=""
-                />Visa</label
-              >
-            </p>
-            <p>
-              <input
-                type="radio"
-                data-card="mastercard"
-                id="mastercard"
-                name="paymentMethod"
-                value="mastercard"
-              />
-              <label for="mastercard">
-                <img
-                  src="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/mastercard_cpwa1n.svg"
-                  alt=""
-                />Mastercard</label
-              >
-            </p>
-            <p>
-              <input
-                type="radio"
-                data-card="maestro"
-                id="maestro"
-                name="paymentMethod"
-                value="maestro"
-              />
-              <label for="maestro">
-                <img
-                src="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/maestro_tv9ivj.svg"
-                alt="" / aria-hidden="true">Maestro</label
-              >
-            </p>
-          </fieldset>
-          <button type="button" class="btn">
-            <div class="flex">
-              <span>Next step</span
-              ><img
-                src="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/arrow_ewfqr2.svg"
+    <section class="payment-method">
+      <div class="step-indicator" data-step="1">
+        <span class="step step-1"></span>
+        <span class="step step-2"></span>
+        <span class="step step-3"></span>
+      </div>
+      <form action="">
+        <!-- Step #1 -->
+        <p class="step-text"><small>Step 1 of 3</small></p>
+        <fieldset>
+          <legend>Select payment method</legend>
+          <p>
+            <input
+              type="radio"
+              data-card="visa"
+              id="visa"
+              name="paymentMethod"
+              value="visa"
+              required
+            />
+            <label for="visa">
+              <img
+                src="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/visa_zqzwtd.svg"
                 alt=""
-              />
-            </div>
-          </button>
-          <!-- Step #2 -->
-        </form>
-      </section>
-    </main>
-    <footer>
-      👩‍💻 Coded by
-      <a href="https://github.com/krisztin" target="_blank" rel="noopener noreferrer">krisztin</a>
-      as part of a
-      <a href="https://frontloops.io" target="_blank" rel="noopener noreferrer"
-        >Frontloops challenge</a
-      >. Changed the
-      <a
-        href="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191023/frontloops/l1s2-paymeth/Loop_1_-_Step_2_i0wqbr.png"
-        target="_blank"
-        rel="noopener noreferrer"
-        >original design</a
-      >
-      for better UX; see HTML comments for details 🧐.
-    </footer>
+              />Visa</label
+            >
+          </p>
+          <p>
+            <input
+              type="radio"
+              data-card="mastercard"
+              id="mastercard"
+              name="paymentMethod"
+              value="mastercard"
+            />
+            <label for="mastercard">
+              <img
+                src="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/mastercard_cpwa1n.svg"
+                alt=""
+              />Mastercard</label
+            >
+          </p>
+          <p>
+            <input
+              type="radio"
+              data-card="maestro"
+              id="maestro"
+              name="paymentMethod"
+              value="maestro"
+            />
+            <label for="maestro">
+              <img
+              src="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/maestro_tv9ivj.svg"
+              alt="" / aria-hidden="true">Maestro</label
+            >
+          </p>
+        </fieldset>
+        <button type="button" class="btn">
+          <div class="flex">
+            <span>Next step</span
+            ><img
+              src="https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/arrow_ewfqr2.svg"
+              alt=""
+            />
+          </div>
+        </button>
+        <!-- Step #2 -->
+      </form>
+    </section>
   </body>
 </html>
