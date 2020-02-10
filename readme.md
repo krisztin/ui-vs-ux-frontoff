@@ -54,11 +54,11 @@ My design:
 
 The original design:
 
-![original design - thank you page](3-order_thanks/design/l1s2.png)
+![original design - thank you page](3-order_thanks/design/l1s3.png)
 
 My design:
 
-![my design - thank you page](3-order_thanks/design/l1s2m.png)
+![my design - thank you page](3-order_thanks/design/l1s3m.png)
 
 🤖 [The code](3-order_thanks/)
 
