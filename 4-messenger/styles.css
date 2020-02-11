@@ -1,0 +1,259 @@
+:root {
+  --colour-primary: #0051bb;
+  --colour-primary--light: #c4e0fa;
+  --colour-primary--dark: #022a5f;
+  --colour-secondary: #e2e2e2;
+  --colour-error: #ff9191;
+  --colour-grey: #a1a1a1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--colour-primary--light);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.a11ytxt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.pad__default {
+  padding: 1rem 1rem 0.6rem;
+}
+
+.btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.window__container {
+  max-width: 420px;
+  background-color: #fff;
+}
+
+/****
+Header
+*****/
+
+.window__header {
+  background-color: var(--colour-primary);
+  color: #fff;
+}
+
+.status {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.status__blocked svg {
+  fill: var(--colour-error);
+}
+
+.message__recipient {
+  font-size: 1.2rem;
+  margin-right: auto;
+}
+
+.window__close {
+  color: transparent;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.window__close:before,
+.window__close:after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  width: 1rem;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.window__close:before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.window__close:after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.window__close:hover {
+  color: var(--colour-grey);
+}
+
+/***********************
+Main - message container
+***********************/
+
+.message__date {
+  text-align: center;
+  position: relative;
+}
+
+.message__date:before,
+.message__date:after {
+  content: '';
+  position: absolute;
+  top: 0.4rem;
+  width: 40%;
+  height: 1px;
+  background-color: currentColor;
+  opacity: 0.5;
+}
+
+.message__date:before {
+  left: 0;
+}
+
+.message__date:after {
+  right: 0;
+}
+
+.message__date,
+.message__container button {
+  text-transform: uppercase;
+}
+
+.message__timestamp,
+.message__date {
+  color: var(--colour-grey);
+  font-size: 0.8rem;
+}
+
+.message__timestamp {
+  margin: 1rem 0 0.2rem;
+}
+
+.message__body {
+  margin: 0 0 0.5rem;
+  padding: 0.8rem 0.5rem;
+  position: relative;
+}
+
+.message:not(.system__message) .message__body {
+  border-radius: 15px;
+  max-width: 80%;
+  display: inline-block;
+}
+
+.message.received .message__body {
+  border-top-right-radius: 0px;
+}
+
+.message.sent .message__body {
+  border-top-left-radius: 0px;
+}
+
+.message__body:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.message.sent .message__body:before {
+  top: 0;
+  left: -5px;
+  border-left: 5px solid transparent;
+  border-top: 10px solid var(--colour-secondary);
+}
+
+.message.received:not(.system__message) .message__body:before {
+  top: 0;
+  right: -5px;
+  border-right: 5px solid transparent;
+  border-top: 10px solid var(--colour-primary--light);
+}
+
+.message.received {
+  text-align: right;
+}
+
+.message.received .message__body {
+  text-align: left;
+}
+
+.received .message__body {
+  background-color: var(--colour-primary--light);
+}
+
+.sent .message__body {
+  background-color: var(--colour-secondary);
+}
+
+.message__blocked .message__body {
+  background-color: var(--colour-error);
+}
+
+/* Form - message */
+
+.message__container form {
+  border-top: 1px solid var(--colour-secondary);
+  padding-top: 0.5rem;
+}
+
+.message__container input {
+  padding: 1rem;
+  border: none;
+  width: 80%;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.message__container form button {
+  padding: 1rem;
+  color: var(--colour-primary);
+  font-weight: 900;
+}
+
+.message__container form button:disabled {
+  color: var(--colour-grey);
+  cursor: default;
+}
+
+@media (max-width: 400px) {
+  body {
+    justify-content: flex-start;
+  }
+}

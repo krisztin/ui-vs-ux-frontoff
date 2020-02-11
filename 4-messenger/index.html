@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mark | Messenger</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="window__container">
+      <header class="window__header row pad__default">
+        <span class="status status__blocked" title="blocked" aria-label="status: blocked">
+          <svg
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 32 32"
+            style="enable-background:new 0 0 32 32;"
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M16,4
+			c2.59,0,4.973,0.844,6.934,2.242L6.238,22.93C4.84,20.969,4,18.586,4,16C4,9.383,9.383,4,16,4z M16,28
+			c-2.59,0-4.973-0.844-6.934-2.242L25.762,9.07C27.16,11.031,28,13.414,28,16C28,22.617,22.617,28,16,28z"
+                />
+              </g>
+            </g>
+          </svg>
+        </span>
+        <h1 class="message__recipient">Mark Zuckerberg</h1>
+        <button class="window__close btn" aria-label="close chat window" title="close"></button>
+      </header>
+      <main class="message__container pad__default">
+        <div class="message__date">Today</div>
+        <article class="message sent">
+          <p class="message__timestamp">10:53</p>
+          <p class="message__body">Hi, Mark! I made a new design for the Messenger App.</p>
+        </article>
+        <article class="message received">
+          <p class="message__timestamp">10:57</p>
+          <p class="message__body">
+            Yo! Send it to my assistant and we'll review it during the year.
+          </p>
+        </article>
+        <article class="message sent">
+          <p class="message__timestamp">11:03</p>
+          <p class="message__body">But Mark...</p>
+        </article>
+        <article class="message received system__message message__blocked">
+          <p class="message__timestamp"></p>
+          <p class="message__body">
+            You were blocked by this user.
+            <span
+              ><a href="http://" target="_blank" rel="noopener noreferrer"
+                >Learn more<span class="a11ytxt">about the blocked status.</span></a
+              ></span
+            >
+          </p>
+        </article>
+        <form class="row" action="">
+          <h2 class="a11ytxt">You are blocked from sending messages to Mark Zuckerberg</h2>
+          <input
+            aria-label="Messaging disabled."
+            class="message__textfield"
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Messaging disabled"
+            disabled
+          />
+          <div>
+            <button class="btn" type="submit" disabled>Send</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
