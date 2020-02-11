@@ -100,3 +100,24 @@ Layout/accessibility:
 
 ```
 
+### Day 4 - Blocked on Messenger
+
+**The original design:**
+
+![original design - blocked on Messenger](4-messenger/design/original.png)
+
+**My design:**
+
+![my design - Blocked on Messenger](4-messenger/design/mine.png)
+
+🤖 [The code](4-messenger/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/3-order_thanks/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+- Added a `blocked` status indicator icon next to the contact's name.
+- Full width system message.
+- Link to more info on being blocked *(with accessible text added on at the end to complete the text to: "Learn more about the blocked status.")*
+- Disabled the `input field` and `send button` as well.
+  
