@@ -112,7 +112,7 @@ Layout/accessibility:
 
 🤖 [The code](4-messenger/)
 
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/3-order_thanks/" target="_blank" rel="noopener noreferrer">See it in action</a>
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/4-messenger/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
 #### UX redesign
 
@@ -121,3 +121,25 @@ Layout/accessibility:
 - Link to more info on being blocked *(with accessible text added on at the end to complete the text to: "Learn more about the blocked status.")*
 - Disabled the `input field` and `send button` as well.
   
+### Day 5 - Boarding pass
+
+**The original design:**
+
+![original design - Boarding pass](5-boarding_pass/design/original.png)
+
+**My design:**
+
+![my design - Boarding pass](5-boarding_pass/design/mine.png)
+
+🤖 [The code](5-boarding_pass/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/5-boarding_pass/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+- Information hierarchy: seat, boarding time and airports get priority.
+- Passenger name positioned to allow for longer names.
+- Broke `departure` into `date` and `boarding` time.
+- Headings are not uppercase, instead the information is (as most already is such as gate, flight number, seat).
+
+Broken up to sections as you travel through the airport from airport names, flight number and gate to the QR code to check-in then your class and seat.
