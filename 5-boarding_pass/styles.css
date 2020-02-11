@@ -1,0 +1,189 @@
+:root {
+  --colour-primary: #1c91c7;
+  --colour-secondary: #3f3f3f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: var(--colour-secondary);
+}
+
+body {
+  background-image: url(/img/bg-plane.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    justify-content: flex-start;
+  }
+}
+
+.content-wrapper {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+}
+
+main {
+  padding: 1rem 2rem 2rem;
+}
+
+header {
+  padding: 2rem 2rem 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align--flex-end {
+  align-items: flex-end;
+}
+
+/*****
+Typography
+*****/
+
+.align--right {
+  text-align: right;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--colour-primary);
+  text-transform: uppercase;
+}
+
+/*******
+Content
+******/
+
+.pass__header {
+  background-color: var(--colour-primary);
+}
+
+p.airport__code,
+p.airport__name {
+  color: #fff;
+  line-height: 1.1;
+}
+
+p.airport__code,
+p.seat__number {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+p.airport__name {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p.airport__name,
+p.passenger__name {
+  text-transform: none;
+}
+
+p.passenger__name {
+  text-transform: none;
+  color: var(--colour-secondary);
+  padding-bottom: 1rem;
+  text-align: right;
+}
+
+.boarding-information h2 {
+  margin: 0 0.5rem 0 0;
+  font-size: 1.3rem;
+}
+
+/* boarding time */
+.boarding-information p {
+  font-size: 3rem;
+}
+
+p.seat__class {
+  font-size: 0.9rem;
+}
+
+/* killing margin between seat number and class h3*/
+h3:nth-of-type(2) {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+}
+
+.flight-icon {
+  /* margin to centre between two airport codes:
+  - half the size of airport code font-size
+  - minus (about) half the size of the svg
+  */
+  margin-top: 1rem;
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.flight-icon svg {
+  transform: rotate(90deg);
+  transform-origin: center;
+  fill: #fff;
+}
+
+.flight-icon:before,
+.flight-icon:after {
+  content: '';
+  position: absolute;
+  border: 1px dashed rgba(255, 255, 255, 0.603);
+  width: 100%;
+  top: 0.7rem;
+}
+
+.flight-icon:before {
+  left: calc(-100% - 0.5rem);
+}
+
+.flight-icon:after {
+  right: calc(-100% - 0.5rem);
+}
+
+@media screen and (max-width: 400px) {
+  .flight-icon:before,
+  .flight-icon:after {
+    display: none;
+  }
+}
