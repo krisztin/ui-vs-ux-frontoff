@@ -1,0 +1,245 @@
+:root {
+  --colour-primary: #1c91c7;
+  --colour-grey: #3f3f3f;
+  --colour-grey--light: #b4b4b4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: var(--colour-secondary);
+}
+
+body {
+  background-color: var(--colour-grey);
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+}
+
+.row {
+  display: flex;
+}
+
+.a11ytxt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+h1,
+a {
+  color: var(--colour-primary);
+  font-weight: 900;
+}
+
+/***********
+left side 
+*************/
+
+.sign-up--left {
+  padding: 3rem;
+}
+
+.sign-up--social__btn,
+.sign-up__email--btn {
+  display: block;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--colour-grey);
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.sign-up--social__btn {
+  border: 1px solid var(--colour-grey--light);
+}
+
+.sign-up--social__btn:hover,
+input[type='submit']:hover {
+  border-color: transparent;
+  -webkit-box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.5);
+}
+
+.sign-up--social__btn svg {
+  height: 1.5rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* Sign up with email */
+
+.sign-up__email--heading {
+  font-size: 1.2rem;
+  color: var(--colour-grey);
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+
+.sign-up__email--heading:before,
+.sign-up__email--heading:after {
+  content: '';
+  position: absolute;
+  width: calc(27% - 1rem);
+  top: 0.6rem;
+  border: 0.02rem solid var(--colour-grey--light);
+}
+.sign-up__email--heading:before {
+  left: 0;
+}
+
+.sign-up__email--heading::after {
+  right: 0;
+}
+
+.sign-up__email--btn:hover {
+  text-decoration: underline;
+}
+
+/* Form - email sign up */
+
+.sign-up__email--form label,
+.checkbox-container {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.sign-up__email--form label:not(.checkbox),
+.sign-up__email--form input:not(.checkbox) {
+  width: 100%;
+  display: block;
+}
+
+.sign-up__email--form input {
+  padding: 0.8rem 0.5rem;
+}
+
+.sign-up__email--form input[placeholder] {
+  font-size: 1rem;
+}
+
+.sign-up__email--form input[type='submit'] {
+  background-color: var(--colour-primary);
+  color: #fff;
+  font-weight: 900;
+}
+
+.sign-up__email--form input[type='submit']:active {
+  background-color: #fff;
+  color: var(--colour-primary);
+}
+
+/* Strip button element default styling */
+.btn {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/*************
+right side - img
+************/
+
+.sign-up--right__bg {
+  width: 45%;
+  min-width: 150px;
+  background-image: url('img/bg-street.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* WCAG minimum contrast req for placeholders */
+
+::-webkit-input-placeholder {
+  color: #767676;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #767676;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #767676;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #767676;
+  opacity: 1;
+}
+
+@media screen and (max-width: 780px) {
+  .sign-up__email--heading:before,
+  .sign-up__email--heading:after {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    justify-content: flex-start;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .sign-up--left {
+    padding: 1rem 0.5rem;
+  }
+  .sign-up--right__bg {
+    width: 100%;
+    min-height: 400px;
+    background-position: center;
+  }
+  .sign-up__email--heading:before,
+  .sign-up__email--heading:after {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .sign-up__email--heading:before,
+  .sign-up__email--heading:after {
+    width: 15%;
+  }
+}
