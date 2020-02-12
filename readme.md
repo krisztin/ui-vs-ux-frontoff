@@ -169,9 +169,7 @@ Broken up to sections as you travel through the airport from airport names, flig
 
 As you can see from the above design solution I'm not a fan of almost explicitly hiding features. On the original design the email sign up is so different in layout/design that it's easy to miss. But **to be true to business needs I did code another version**. And because I'm missing including Javascript in these designs I've added a few lines of JS to deal with switching `display:none` on the sign up form to `block` and it even transforms 🧙‍♂️ 
 
-<video playsinline="" autoplay="" muted="" loop="" aria-hidden="true">
- <source src="6-sign_up/design/mine.webm" type="video/mp4">
-</video>
+![my alternate design - sign up](6-sign_up/design/mine.gif)
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See this alternate sign up page in action</a>
 
