@@ -143,3 +143,36 @@ Layout/accessibility:
 - Headings are not uppercase, instead the information is (as most already is such as gate, flight number, seat).
 
 Broken up to sections as you travel through the airport from airport names, flight number and gate to the QR code to check-in then your class and seat.
+
+
+### Day 6 - Sign up Oauth + email
+
+**The original design:**
+
+![original design - sign up](6-sign_up/design/original.png)
+
+**My design:**
+
+![my design - sign up](6-sign_up/design/mine.png)
+
+🤖 [The code](6-sign_up/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+- Got rid of the allcaps buttons for readability.
+- positioned social icons next to the button text.
+- Added a heading for the email sign up along with a form for quick sign up.
+- Added the TOS link because I just **love** the law.
+- Following accessibility best practices the *Read our Terms and Service and Privacy Policy* link is not inside the checkbox.
+
+As you can see from the above design solution I'm not a fan of almost explicitly hiding features. On the original design the email sign up is so different in layout/design that it's easy to miss. But **to be true to business needs I did code another version**. And because I'm missing including Javascript in these designs I've added a few lines of JS to deal with switching `display:none` on the sign up form to `block` and it even transforms 🧙‍♂️ 
+
+<video playsinline="" autoplay="" muted="" loop="" aria-hidden="true">
+ <source src="6-sign_up/design/mine.webm" type="video/mp4">
+</video>
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See this alternate sign up page in action</a>
+
+🤖 [The code](6-sign_up/index_v2.html)
