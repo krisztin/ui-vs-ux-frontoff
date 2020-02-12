@@ -33,7 +33,7 @@ My design:
 
 The original design:
 
-![original design - payment method picker](2-payment_method/design/l1s2.png)
+![original design - payment method picker](2-payment_method/design/l1s2.jpg)
 
 My design:
 
@@ -125,11 +125,11 @@ Layout/accessibility:
 
 **The original design:**
 
-![original design - Boarding pass](5-boarding_pass/design/original.png)
+![original design - Boarding pass](5-boarding_pass/design/original.jpg)
 
 **My design:**
 
-![my design - Boarding pass](5-boarding_pass/design/mine.png)
+![my design - Boarding pass](5-boarding_pass/design/mine.jpg)
 
 🤖 [The code](5-boarding_pass/)
 
@@ -149,11 +149,11 @@ Broken up to sections as you travel through the airport from airport names, flig
 
 **The original design:**
 
-![original design - sign up](6-sign_up/design/original.png)
+![original design - sign up](6-sign_up/design/original.jpg)
 
 **My design:**
 
-![my design - sign up](6-sign_up/design/mine.png)
+![my design - sign up](6-sign_up/design/mine.jpg)
 
 🤖 [The code](6-sign_up/)
 
