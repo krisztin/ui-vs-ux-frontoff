@@ -174,3 +174,23 @@ As you can see from the above design solution I'm not a fan of almost explicitly
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See this alternate sign up page in action</a>
 
 🤖 [The code](6-sign_up/index_v2.html)
+
+### Day 7 - Blog post
+
+The original design:
+
+![original design - Blog post](7-blog_post/design/original.png)
+
+My design:
+
+![my design - Blog post](7-blog_post/design/mine.png)
+
+🤖 [The code](7-blog_post/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/7-blog_post/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+The first design that I haven't meddled with at all (other than change the colour of the comment count which was way too light of a grey to pass WCAG guidelines). So instead, here is a screenshot of **my mobile/small screen layout**:
+
+![mobile screen - Blog post](7-blog_post/design/mine_sm.png)
