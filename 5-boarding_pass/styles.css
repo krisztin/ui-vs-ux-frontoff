@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: url(/img/bg-plane.jpg);
+  background-image: url(img/bg-plane.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -144,6 +144,9 @@ h3:nth-of-type(2) {
 img {
   width: 100%;
   height: auto;
+}
+
+.qr-code {
   padding-top: 1rem;
 }
 
