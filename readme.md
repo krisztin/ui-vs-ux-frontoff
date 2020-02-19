@@ -191,6 +191,26 @@ My design:
 
 #### UX redesign
 
-The first design that I haven't meddled with at all (other than change the colour of the comment count which was way too light of a grey to pass WCAG guidelines). So instead, here is a screenshot of **my mobile/small screen layout**:
+The first design that I haven't meddled with at all (other than change the colour of the comment count which was way too light of a grey to pass WCAG guidelines).
 
-![mobile screen - Blog post](7-blog_post/design/mine_sm.png)
+
+### Day 8 - A pink article
+
+The original design:
+
+![original design - Blog post](8-pink_article/design/original.png)
+
+My design:
+
+![my design - Blog post](8-pink_article/design/mine.png)
+
+🤖 [The code](8-pink_article/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/8-pink_article/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+- Once again, getting rid of the greys. Very unfortunate colour choice for a navigation.
+- Added indication of which page is active with an underline similar to the decorative line next to the article's title.
+- Made '*Tourism*' a link to what I assume is a category on the website anyhow.
+  
