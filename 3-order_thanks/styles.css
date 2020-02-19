@@ -196,7 +196,7 @@ Footer - questions
 /*bike bg image*/
 .bg-bicycle {
   height: 15rem;
-  background-image: url('/img/bg-bicycle.png');
+  background-image: url('img/bg-bicycle.png');
   background-size: calc(100% - 6rem);
   background-repeat: no-repeat;
   background-position: bottom right;
