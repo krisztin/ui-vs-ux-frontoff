@@ -214,3 +214,26 @@ My design:
 - Added indication of which page is active with an underline similar to the decorative line next to the article's title.
 - Made '*Tourism*' a link to what I assume is a category on the website anyhow.
   
+### Day 9 - A digital wallet
+
+The original design:
+
+![original design - Blog post](9-wallet/design/original.png)
+
+My design:
+
+![my design - Blog post](9-wallet/design/mine.png)
+
+🤖 [The code](9-wallet/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/9-wallet/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+- The active card got a more signified design.
+- As there are two screens, to avoid confusion, the active card number is also displayed under the 'Current Balance' title on the right.
+- I've added a few filters just for fun. And they actually work! Once again, I was missing a little JavaScript magic so I went ahead and done that.
+- Took off the confusing circle border from the + and - icons on incomes and expenditures because they looked like a button.
+- Kept a visible scrollbar on both sides as an affordance to signify more content available if scrolled. Did make it a bit fancier looking though.
+- Added a - (minus) sign before money going out so colour is not the only visual feedback on the nature of a balance item.
+  
