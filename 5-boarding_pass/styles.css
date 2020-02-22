@@ -171,7 +171,7 @@ img {
 .flight-icon:after {
   content: '';
   position: absolute;
-  border: 1px dashed rgba(255, 255, 255, 0.603);
+  border-top: 2px dashed rgba(255, 255, 255, 0.603);
   width: 100%;
   top: 0.7rem;
 }
