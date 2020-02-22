@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Balance</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="content-container row">
+      <section class="wallets-container">
+        <div class="wallets-header row align--center">
+          <h1>My Wallets</h1>
+          <input type="image" src="img/plus.svg" class="button--add__wallet" alt="more options" />
+        </div>
+        <button class="card">
+          <img class="icon__card" src="img/visa.svg" alt="" />
+          <p class="card__number"><strong>**** **** **** 2562</strong></p>
+          <p class="card__exp"><small>Valid thru: 12/17</small></p>
+        </button>
+        <button class="card active">
+          <img class="icon__card" src="img/mastercard.svg" alt="" />
+          <p class="card__number"><strong>**** **** **** 9876</strong></p>
+          <p class="card__exp"><small>Valid thru: 12/17</small></p>
+        </button>
+        <button class="card">
+          <img class="icon__card" src="img/maestro.svg" alt="" />
+          <p class="card__number"><strong>**** **** **** 2012</strong></p>
+          <p class="card__exp"><small>Valid thru: 12/17</small></p>
+        </button>
+      </section>
+      <section class="balance-container">
+        <header>
+          <div class="row align--base">
+            <div>
+              <h1>Current Balance</h1>
+              <h2 class="balance--card">MasterCard ending in 9876</h2>
+            </div>
+            <p class="amount balance">£729.<small>00</small></p>
+          </div>
+          <nav class="balance__filter row align--center">
+            <span><strong>Show:</strong></span>
+            <button id="filterIncomeBtn">Income</button>
+            <button id="filterExpenditureBtn">Expenditure</button>
+            <button id="filterAllBtn" class="filter--active">All</button>
+            <button title="more filters" aria-label="more filters">
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+            </button>
+          </nav>
+        </header>
+        <ul>
+          <li class="balance__item row align--center" data-type="expenditure">
+            <svg
+              fill="#000"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M19 13H5v-2h14v2z" />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
+            <div>
+              <p class="item__name"><strong>Apple iPhone 7, 128GB</strong></p>
+              <p class="item__meta"><small>Electronics #323243424 - 12 July 2015</small></p>
+            </div>
+            <p class="amount item__amount expenditure">-£650.<small>00</small></p>
+          </li>
+          <li class="balance__item row align--center" data-type="income">
+            <svg
+              fill="#000"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
+            <div>
+              <p class="item__name"><strong>Mother</strong></p>
+              <p class="item__meta"><small>Payment #3232 - 11 July 2015</small></p>
+            </div>
+            <p class="amount item__amount income">£900.<small>00</small></p>
+          </li>
+          <li class="balance__item row align--center" data-type="expenditure">
+            <svg
+              fill="#000"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M19 13H5v-2h14v2z" />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
+            <div>
+              <p class="item__name"><strong>Energy Bill</strong></p>
+              <p class="item__meta"><small>Other #723245424 - 11 July 2015</small></p>
+            </div>
+            <p class="amount item__amount expenditure">-£65.<small>00</small></p>
+          </li>
+          <li class="balance__item row align--center" data-type="expenditure">
+            <svg
+              fill="#921414"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M19 13H5v-2h14v2z" />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
+            <div>
+              <p class="item__name"><strong>Odeon Cinemas</strong></p>
+              <p class="item__meta"><small>Entertainment #323243424 - 10 July 2015</small></p>
+            </div>
+            <p class="amount item__amount expenditure">-£42.<small>50</small></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      const incBtn = document.getElementById('filterIncomeBtn')
+      const expBtn = document.getElementById('filterExpenditureBtn')
+      const allBtn = document.getElementById('filterAllBtn')
+      const incomes = document.querySelectorAll('[data-type="income"]')
+      const expenses = document.querySelectorAll('[data-type="expenditure"]')
+
+      incBtn.addEventListener('click', () => {
+        expenses.forEach(expense => (expense.style.display = 'none'))
+        incomes.forEach(income => (income.style.display = 'flex'))
+
+        incBtn.classList.add('filter--active')
+        allBtn.classList.remove('filter--active')
+        expBtn.classList.remove('filter--active')
+      })
+      expBtn.addEventListener('click', () => {
+        expenses.forEach(expense => (expense.style.display = 'flex'))
+        incomes.forEach(income => (income.style.display = 'none'))
+
+        expBtn.classList.add('filter--active')
+        incBtn.classList.remove('filter--active')
+        allBtn.classList.remove('filter--active')
+      })
+      allBtn.addEventListener('click', () => {
+        expenses.forEach(expense => (expense.style.display = 'flex'))
+        incomes.forEach(expense => (expense.style.display = 'flex'))
+
+        allBtn.classList.add('filter--active')
+        expBtn.classList.remove('filter--active')
+        allBtn.classList.remove('filter--active')
+      })
+    </script>
+  </body>
+</html>
