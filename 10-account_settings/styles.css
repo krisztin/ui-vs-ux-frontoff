@@ -1,0 +1,155 @@
+:root {
+  --colour-primary: #fdec51;
+  --colour-grey: #2f2f2f;
+  --padding: 2.5rem 2.5rem 1.5rem;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  background-color: var(--colour-grey);
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.content-container {
+  width: 100%;
+  background-color: var(--colour-primary);
+  padding: var(--padding);
+}
+
+.form-bg,
+.content-container {
+  max-width: 450px;
+}
+
+.row {
+  display: -webkit-box;
+  display: flex;
+}
+
+.just--flex-end {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.align--centre {
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 1.2rem;
+  line-height: 1.225;
+  font-weight: 500;
+}
+
+button,
+input[type='submit'] {
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+button:hover,
+input[type='submit']:hover {
+  background-color: var(--colour-grey);
+  color: var(--colour-primary);
+  box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.51);
+}
+
+button:active,
+input[type='submit']:active {
+  color: var(--colour-grey);
+  background-color: #000;
+}
+
+header button {
+  font-size: 1.2rem;
+  margin-left: auto;
+}
+
+main {
+  position: relative;
+}
+
+.profile-image {
+  position: absolute;
+  /* to centre the image on the floated form:
+    .form-bg top margin: 2.5rem
+    .profile-image width: 3.5rem/2 */
+  top: calc(2.5rem - 1.75rem);
+  left: 2.5rem;
+  border-radius: 50%;
+  width: 3.5rem;
+}
+
+.form-bg {
+  float: right;
+  margin: 2.5rem -5rem 1rem 0;
+  padding: var(--padding);
+  color: var(--colour-grey);
+  background-color: #fff;
+  box-shadow: -8px 6px 17px 3px rgba(0, 0, 0, 0.22);
+}
+
+input:not([type='submit']),
+label,
+textarea {
+  width: 100%;
+  display: block;
+}
+
+input:not([type='submit']) {
+  padding: 0.5rem;
+}
+
+label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.col--2nd {
+  margin-left: 1rem;
+  width: 50%;
+}
+
+.buttons-container {
+  clear: right;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Account settings</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="content-container">
+      <header class="row align--centre">
+        <h1>Account settings</h1>
+        <button aria-label="close">X</button>
+      </header>
+      <main>
+        <img class="profile-image" src="img/avatar.jpg" alt="x's avatar" />
+        <form action="" class="clearfix">
+          <div class="form-bg">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+            <div class="row">
+              <div>
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName" id="firstName" />
+              </div>
+              <div class="col--2nd">
+                <label for="lastName">Last name</label>
+                <input type="text" name="lastName" id="lastName" />
+              </div>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="40" rows="8"></textarea>
+          </div>
+          <div class="row buttons-container just--flex-end">
+            <button>Cancel</button>
+            <input type="submit" value="Save" />
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
