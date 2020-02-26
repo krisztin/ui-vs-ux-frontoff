@@ -42,9 +42,15 @@
           </div>
           <nav class="balance__filter row align--center">
             <span><strong>Show:</strong></span>
-            <button id="filterIncomeBtn">Income</button>
-            <button id="filterExpenditureBtn">Expenditure</button>
-            <button id="filterAllBtn" class="filter--active">All</button>
+            <button class="filter-btn" data-filter="inc">
+              Income
+            </button>
+            <button class="filter-btn" data-filter="exp">
+              Expenditure
+            </button>
+            <button class="filter-btn filter--active" data-filter="all" id="filterAllBtn">
+              All
+            </button>
             <button title="more filters" aria-label="more filters">
               <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h24v24H0z" fill="none" />
@@ -128,36 +134,31 @@
       </section>
     </main>
     <script>
-      const incBtn = document.getElementById('filterIncomeBtn')
-      const expBtn = document.getElementById('filterExpenditureBtn')
-      const allBtn = document.getElementById('filterAllBtn')
-      const incomes = document.querySelectorAll('[data-type="income"]')
-      const expenses = document.querySelectorAll('[data-type="expenditure"]')
+      const buttons = document.querySelectorAll('.filter-btn')
 
-      incBtn.addEventListener('click', () => {
-        expenses.forEach(expense => (expense.style.display = 'none'))
-        incomes.forEach(income => (income.style.display = 'flex'))
+      function filterBalance() {
+        let type = this.dataset.filter
+        let items = document.querySelectorAll('[data-type')
 
-        incBtn.classList.add('filter--active')
-        allBtn.classList.remove('filter--active')
-        expBtn.classList.remove('filter--active')
-      })
-      expBtn.addEventListener('click', () => {
-        expenses.forEach(expense => (expense.style.display = 'flex'))
-        incomes.forEach(income => (income.style.display = 'none'))
+        if (type == 'all') {
+          items.forEach(item => (item.style.display = 'flex'))
+        } else {
+          for (var i = 0; i < items.length; i++) {
+            items[i].dataset.type == type
+              ? (items[i].style.display = 'flex')
+              : (items[i].style.display = 'none')
+          }
+        }
+        // Remove button underline
+        let currentActive = document.querySelector('.filter--active')
+        currentActive.classList.remove('filter--active')
+        // Add button underline to active filter
+        this.classList.add('filter--active')
+      }
 
-        expBtn.classList.add('filter--active')
-        incBtn.classList.remove('filter--active')
-        allBtn.classList.remove('filter--active')
-      })
-      allBtn.addEventListener('click', () => {
-        expenses.forEach(expense => (expense.style.display = 'flex'))
-        incomes.forEach(expense => (expense.style.display = 'flex'))
-
-        allBtn.classList.add('filter--active')
-        expBtn.classList.remove('filter--active')
-        allBtn.classList.remove('filter--active')
-      })
+      for (i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', filterBalance)
+      }
     </script>
   </body>
 </html>
