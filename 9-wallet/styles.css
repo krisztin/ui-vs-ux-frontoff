@@ -190,11 +190,11 @@ Right - Balance
   margin-right: 1rem;
 }
 
-.balance__item[data-type='income'] svg {
+.balance__item[data-type='inc'] svg {
   fill: var(--colour-positive);
 }
 
-.balance__item[data-type='expenditure'] svg {
+.balance__item[data-type='exp'] svg {
   fill: var(--colour-negative);
 }
 
