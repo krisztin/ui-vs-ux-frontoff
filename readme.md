@@ -1,11 +1,34 @@
-# Frontloops Challenge
+# Frontloops Challenge <!-- omit in toc -->
 
 [Frontloops](https://frontloops.io) is a front-end challenge site by Dimitry Belyaev, a Sr. FE Dev at Booking.com. As part of the challenge you get an image/video file of the final design then off you code.
 
-I've decided to hone my FE skills a bit whilst also **practicing some UX Design by also tweaking the designs** if and when needed.
+I've decided to hone my FE skills a bit whilst **also practicing some UX Design by tweaking the designs** as well if and when needed.
 
-## Markup challenges
+## Markup challenges <!-- omit in toc -->
 To improve HTML and CSS skills.
+
+- [Day 1 - Plan Picker](#day-1---plan-picker)
+  - [UX redesign](#ux-redesign)
+- [Day 2 - Payment method picker](#day-2---payment-method-picker)
+  - [UX redesign](#ux-redesign-1)
+- [Day 3 - Order thank you page](#day-3---order-thank-you-page)
+  - [UX redesign](#ux-redesign-2)
+- [Day 4 - Blocked on Messenger](#day-4---blocked-on-messenger)
+  - [UX redesign](#ux-redesign-3)
+- [Day 5 - Boarding pass](#day-5---boarding-pass)
+  - [UX redesign](#ux-redesign-4)
+- [Day 6 - Sign up Oauth + email](#day-6---sign-up-oauth--email)
+  - [UX redesign](#ux-redesign-5)
+- [Day 7 - Blog post](#day-7---blog-post)
+  - [UX redesign](#ux-redesign-6)
+- [Day 8 - A pink article](#day-8---a-pink-article)
+  - [UX redesign](#ux-redesign-7)
+- [Day 9 - A digital wallet](#day-9---a-digital-wallet)
+  - [UX redesign](#ux-redesign-8)
+- [Day 10 - Account settings](#day-10---account-settings)
+  - [UX redesign](#ux-redesign-9)
+- [Day 11 - Folders](#day-11---folders)
+  - [UX redesign](#ux-redesign-10)
 
 ### Day 1 - Plan Picker
 
