@@ -236,4 +236,26 @@ My design:
 - Took off the confusing circle border from the + and - icons on incomes and expenditures because they looked like a button.
 - Kept a visible scrollbar on both sides as an affordance to signify more content available if scrolled. Did make it a bit fancier looking though.
 - Added a - (minus) sign before money going out so colour is not the only visual feedback on the nature of a balance item.
+
+### Day 10 - Account settings
+
+Desgins side-by-side
+
+![original design - Blog post](10-account_settings/design/origmine.png)
+
+🤖 [The code](10-account_settings/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/10-account_settings/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+This was a great opportunity to improve upon a good looking form with terrible UX design. I wrote an [article about the nuances of human-centred form design](https://www.kriszt.in/blog/a11yform) through making a stunningly designed (not by me) sign in/up form accessible/user-friendly, if you are interested in more detail.
+
+Bottom line is:
+- fields should really have 4 borders
+- placeholder texts can be confusing to users so best to ditch them. If you want to give instructions you can do so in a paragraph under your label for instance.
+
+Additional stuff (just the usual):
+- *grey's, not okay* for button colours as it just makes them look disabled
+- STOP SHOUTING AT USERS and help them read your stuff faster.
   
