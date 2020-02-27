@@ -286,7 +286,7 @@ Additional stuff (just the usual):
 
 Original design:
 
-![original design - folders](11-folders/design/origmine.png)
+![original design - folders](11-folders/design/original.png)
 
 My design:
 
