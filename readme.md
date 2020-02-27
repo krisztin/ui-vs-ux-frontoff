@@ -198,11 +198,11 @@ The first design that I haven't meddled with at all (other than change the colou
 
 The original design:
 
-![original design - Blog post](8-pink_article/design/original.png)
+![original design - pink article](8-pink_article/design/original.png)
 
 My design:
 
-![my design - Blog post](8-pink_article/design/mine.png)
+![my design - pink article](8-pink_article/design/mine.png)
 
 🤖 [The code](8-pink_article/)
 
@@ -218,11 +218,11 @@ My design:
 
 The original design:
 
-![original design - Blog post](9-wallet/design/original.png)
+![original design - digital wallet](9-wallet/design/original.png)
 
 My design:
 
-![my design - Blog post](9-wallet/design/mine.png)
+![my design - digital wallet](9-wallet/design/mine.png)
 
 🤖 [The code](9-wallet/)
 
@@ -241,7 +241,7 @@ My design:
 
 Desgins side-by-side
 
-![original design - Blog post](10-account_settings/design/origmine.png)
+![original and my own design - account settings](10-account_settings/design/origmine.png)
 
 🤖 [The code](10-account_settings/)
 
@@ -259,3 +259,22 @@ Additional stuff (just the usual):
 - *grey's, not okay* for button colours as it just makes them look disabled
 - STOP SHOUTING AT USERS and help them read your stuff faster.
   
+### Day 11 - Folders
+
+Original design:
+
+![original design - folders](11-folders/design/origmine.png)
+
+My design:
+
+![my design - folders](11-folders/design/mine.gif)
+
+🤖 [The code](11-folders/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/11-folders/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign
+
+- Just played around with the design a bit creating `:hover`, `:focus` and `:active` states.
+- The small triangle arrow on folders that have subfolders is animated/rotated on folder opening/closing.
+- Added some depth for the sub-folders with an inset dropshadow.
