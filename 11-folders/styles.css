@@ -1,0 +1,184 @@
+:root {
+  --colour-primary: rgb(139, 59, 210);
+  --colour-grey: rgb(82, 29, 129);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(139, 59, 210), rgb(47, 30, 152));
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 270px;
+  background-color: var(--colour-primary);
+  color: #fff;
+}
+
+.row {
+  display: -webkit-box;
+  display: flex;
+}
+
+.align--centre {
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.icon-folder {
+  width: 1.3rem;
+  height: auto;
+  margin-right: 0.5rem;
+
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+.icon-has_subfolder {
+  margin-left: auto;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+button.active .icon-has_subfolder {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+button.folder {
+  width: 100%;
+  position: relative;
+}
+button.folder:hover {
+  background: var(--colour-grey);
+}
+
+button.folder:active {
+  background: rgb(17, 11, 22);
+}
+
+.sub-folders {
+  background: var(--colour-grey);
+  font-size: 0.9rem;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  list-style: none;
+  box-shadow: inset 0px 4px 5px 0px rgba(0, 0, 0, 0.49);
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+}
+
+.folder:before,
+.sub-folders:before {
+  content: '';
+  position: absolute;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  top: 0;
+  /* button.folder padding + half of button image width*/
+  left: calc(1rem + (1.3rem / 2) - 1px);
+  height: 100%;
+}
+
+.folder:before,
+.folder::after {
+  content: '';
+  position: absolute;
+  border-left: 2px solid #fff;
+  /* button.folder padding + half of button image width
+  then take away half the 2px border */
+  left: calc(1rem + (1.3rem / 2) - 1px);
+  height: calc(50% - 0.6rem);
+}
+
+.folder::before {
+  top: 0;
+}
+
+.folder::after {
+  bottom: 0;
+}
+
+.sub-folder {
+  position: relative;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/* fake dot list item */
+.sub-folder::before {
+  content: '';
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 0.4rem solid var(--colour-grey);
+  /* button.folder padding + half of button image width*/
+  left: -1.45rem;
+  top: 0.55rem;
+}
+
+.sub-folder:hover.sub-folder::before,
+.sub-folder:focus.sub-folder::before {
+  border-color: #fff;
+}
+
+.sub-folder:first-of-type {
+  padding-top: 1.5rem;
+}
+
+.sub-folder:first-of-type::before {
+  top: 1.45rem;
+}
+
+.sub-folder:last-of-type {
+  padding-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
