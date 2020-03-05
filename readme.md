@@ -8,27 +8,16 @@ I've decided to hone my FE skills a bit whilst **also practicing some UX Design 
 To improve HTML and CSS skills.
 
 - [Day 1 - Plan Picker](#day-1---plan-picker)
-  - [UX redesign](#ux-redesign)
 - [Day 2 - Payment method picker](#day-2---payment-method-picker)
-  - [UX redesign](#ux-redesign-1)
 - [Day 3 - Order thank you page](#day-3---order-thank-you-page)
-  - [UX redesign](#ux-redesign-2)
 - [Day 4 - Blocked on Messenger](#day-4---blocked-on-messenger)
-  - [UX redesign](#ux-redesign-3)
 - [Day 5 - Boarding pass](#day-5---boarding-pass)
-  - [UX redesign](#ux-redesign-4)
 - [Day 6 - Sign up Oauth + email](#day-6---sign-up-oauth--email)
-  - [UX redesign](#ux-redesign-5)
 - [Day 7 - Blog post](#day-7---blog-post)
-  - [UX redesign](#ux-redesign-6)
 - [Day 8 - A pink article](#day-8---a-pink-article)
-  - [UX redesign](#ux-redesign-7)
 - [Day 9 - A digital wallet](#day-9---a-digital-wallet)
-  - [UX redesign](#ux-redesign-8)
 - [Day 10 - Account settings](#day-10---account-settings)
-  - [UX redesign](#ux-redesign-9)
 - [Day 11 - Folders](#day-11---folders)
-  - [UX redesign](#ux-redesign-10)
 
 ### Day 1 - Plan Picker
 
@@ -44,7 +33,7 @@ My design:
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/1-plan_picker/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 - changed uppercase text to normal for readability
 - added an h1 to explain the selection
@@ -54,19 +43,15 @@ My design:
 
 ### Day 2 - Payment method picker
 
-The original design:
+Original vs my design:
 
-![original design - payment method picker](2-payment_method/design/l1s2.jpg)
-
-My design:
-
-![my design - payment method picker](2-payment_method/design/l1s2m.png)
+![my design vs original for payment method picker](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d1_xvbvsp.png))
 
 🤖 [The code](2-payment_method/)
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/2-payment_method/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 - unchecked inputs' labels are still black; design suggested grey but that could potentially confuse users thinking the option is disabled
 - made the container narrower so the checkmark is closer to the label instead of miles away on the right
@@ -75,19 +60,15 @@ My design:
 
 ### Day 3 - Order thank you page
 
-The original design:
+Original vs my design:
 
-![original design - thank you page](3-order_thanks/design/l1s3.png)
-
-My design:
-
-![my design - thank you page](3-order_thanks/design/l1s3m.png)
+![original vs my design for thank you page](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d2_e1rnig.png)
 
 🤖 [The code](3-order_thanks/)
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/3-order_thanks/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 Information enrichment:
 
@@ -125,19 +106,15 @@ Layout/accessibility:
 
 ### Day 4 - Blocked on Messenger
 
-**The original design:**
+Original vs my design:
 
-![original design - blocked on Messenger](4-messenger/design/original.png)
-
-**My design:**
-
-![my design - Blocked on Messenger](4-messenger/design/mine.png)
+![original vs my design - blocked on Messenger](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d3_m1maz5.png)
 
 🤖 [The code](4-messenger/)
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/4-messenger/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 - Added a `blocked` status indicator icon next to the contact's name.
 - Full width system message.
@@ -146,19 +123,15 @@ Layout/accessibility:
   
 ### Day 5 - Boarding pass
 
-**The original design:**
+Original vs my design:
 
-![original design - Boarding pass](5-boarding_pass/design/original.jpg)
-
-**My design:**
-
-![my design - Boarding pass](5-boarding_pass/design/mine.jpg)
+![original vs my design - Boarding pass](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d4_ok3tck.jpg)
 
 🤖 [The code](5-boarding_pass/)
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/5-boarding_pass/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 - Information hierarchy: seat, boarding time and airports get priority.
 - Passenger name positioned to allow for longer names.
@@ -170,19 +143,15 @@ Broken up to sections as you travel through the airport from airport names, flig
 
 ### Day 6 - Sign up Oauth + email
 
-**The original design:**
+Original vs my design:
 
-![original design - sign up](6-sign_up/design/original.jpg)
-
-**My design:**
-
-![my design - sign up](6-sign_up/design/mine.jpg)
+![original vs my design - sign up](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d5_zdszlu.png)
 
 🤖 [The code](6-sign_up/)
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 - Got rid of the allcaps buttons for readability.
 - positioned social icons next to the button text.
@@ -212,7 +181,7 @@ My design:
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/7-blog_post/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 The first design that I haven't meddled with at all (other than change the colour of the comment count which was way too light of a grey to pass WCAG guidelines).
 
@@ -231,7 +200,7 @@ My design:
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/8-pink_article/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 - Once again, getting rid of the greys. Very unfortunate colour choice for a navigation.
 - Added indication of which page is active with an underline similar to the decorative line next to the article's title.
@@ -239,19 +208,15 @@ My design:
   
 ### Day 9 - A digital wallet
 
-The original design:
+Original vs my design:
 
-![original design - digital wallet](9-wallet/design/original.png)
-
-My design:
-
-![my design - digital wallet](9-wallet/design/mine.png)
+![original vs my design - digital wallet](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d6_bsficy.png)
 
 🤖 [The code](9-wallet/)
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/9-wallet/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 - The active card got a more signified design.
 - As there are two screens, to avoid confusion, the active card number is also displayed under the 'Current Balance' title on the right.
@@ -270,7 +235,7 @@ Desgins side-by-side
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/10-account_settings/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 This was a great opportunity to improve upon a good looking form with terrible UX design. I wrote an [article about the nuances of human-centred form design](https://www.kriszt.in/blog/a11yform) through making a stunningly designed (not by me) sign in/up form accessible/user-friendly, if you are interested in more detail.
 
@@ -286,7 +251,7 @@ Additional stuff (just the usual):
 
 Original design:
 
-![original design - folders](11-folders/design/original.png)
+![original design - folders](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583094778/krisztin/uiux/folderso_ckpmuv.png)
 
 My design:
 
@@ -296,7 +261,7 @@ My design:
 
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/11-folders/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
-#### UX redesign
+#### UX redesign  <!-- omit in toc -->
 
 - Just played around with the design a bit creating `:hover`, `:focus` and `:active` states.
 - The small triangle arrow on folders that have subfolders is animated/rotated on folder opening/closing.
