@@ -7,58 +7,45 @@ I've decided to hone my FE skills a bit whilst **also practicing some UX Design 
 ## Markup challenges <!-- omit in toc -->
 To improve HTML and CSS skills.
 
-- [Day 1 - Plan Picker](#day-1---plan-picker)
-- [Day 2 - Payment method picker](#day-2---payment-method-picker)
-- [Day 3 - Order thank you page](#day-3---order-thank-you-page)
-- [Day 4 - Blocked on Messenger](#day-4---blocked-on-messenger)
-- [Day 5 - Boarding pass](#day-5---boarding-pass)
-- [Day 6 - Sign up Oauth + email](#day-6---sign-up-oauth--email)
-- [Day 7 - Blog post](#day-7---blog-post)
-- [Day 8 - A pink article](#day-8---a-pink-article)
-- [Day 9 - A digital wallet](#day-9---a-digital-wallet)
-- [Day 10 - Account settings](#day-10---account-settings)
-- [Day 11 - Folders](#day-11---folders)
+- [Sign up Oauth + email](#sign-up-oauth--email)
+- [Order thank you page](#order-thank-you-page)
+- [Digital wallet](#digital-wallet)
+- [Blocked on Messenger](#blocked-on-messenger)
+- [Account settings](#account-settings)
+- [Folders](#folders)
+- [Payment method picker](#payment-method-picker)
+- [Boarding pass](#boarding-pass)
+- [Blog post](#blog-post)
+- [A pink article](#a-pink-article)
+- [Plan Picker](#plan-picker)
 
-### Day 1 - Plan Picker
-
-The original design:
-
-![original design - plan picker](1-plan_picker/design/l1s1.png)
-
-My design:
-
-![my design - plan picker](1-plan_picker/design/l1s1m.png)
-
-🤖 [The code](1-plan_picker/)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/1-plan_picker/" target="_blank" rel="noopener noreferrer">See it in action</a>
-
-#### UX redesign  <!-- omit in toc -->
-
-- changed uppercase text to normal for readability
-- added an h1 to explain the selection
-- slightly larger text (suggested base font-size was 14px 🔬 which is waaaay too tiny)
-- more contrasting font colour for the description
-
-
-### Day 2 - Payment method picker
+### Sign up Oauth + email
 
 Original vs my design:
 
-![my design vs original for payment method picker](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d1_xvbvsp.png))
+![original vs my design - sign up](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d5_zdszlu.png)
 
-🤖 [The code](2-payment_method/)
+🤖 [The code](6-sign_up/)
 
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/2-payment_method/" target="_blank" rel="noopener noreferrer">See it in action</a>
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See it in action</a>
 
 #### UX redesign  <!-- omit in toc -->
 
-- unchecked inputs' labels are still black; design suggested grey but that could potentially confuse users thinking the option is disabled
-- made the container narrower so the checkmark is closer to the label instead of miles away on the right
-- design called for all text to be uppercase which is hell on readability
-- checked label gets physically larger to give better feedback on it being selected
+- Got rid of the allcaps buttons for readability.
+- positioned social icons next to the button text.
+- Added a heading for the email sign up along with a form for quick sign up.
+- Added the TOS link because I just **love** the law.
+- Following accessibility best practices the *Read our Terms and Service and Privacy Policy* link is not inside the checkbox.
 
-### Day 3 - Order thank you page
+As you can see from the above design solution I'm not a fan of almost explicitly hiding features. On the original design the email sign up is so different in layout/design that it's easy to miss. But **to be true to business needs I did code another version**. And because I'm missing including Javascript in these designs I've added a few lines of JS to deal with switching `display:none` on the sign up form to `block` and it even transforms 🧙‍♂️ 
+
+![my alternate design - sign up](6-sign_up/design/mine.gif)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See this alternate sign up page in action</a>
+
+🤖 [The code](6-sign_up/index_v2.html)
+
+### Order thank you page
 
 Original vs my design:
 
@@ -104,109 +91,7 @@ Layout/accessibility:
 
 ```
 
-### Day 4 - Blocked on Messenger
-
-Original vs my design:
-
-![original vs my design - blocked on Messenger](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d3_m1maz5.png)
-
-🤖 [The code](4-messenger/)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/4-messenger/" target="_blank" rel="noopener noreferrer">See it in action</a>
-
-#### UX redesign  <!-- omit in toc -->
-
-- Added a `blocked` status indicator icon next to the contact's name.
-- Full width system message.
-- Link to more info on being blocked *(with accessible text added on at the end to complete the text to: "Learn more about the blocked status.")*
-- Disabled the `input field` and `send button` as well.
-  
-### Day 5 - Boarding pass
-
-Original vs my design:
-
-![original vs my design - Boarding pass](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d4_ok3tck.jpg)
-
-🤖 [The code](5-boarding_pass/)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/5-boarding_pass/" target="_blank" rel="noopener noreferrer">See it in action</a>
-
-#### UX redesign  <!-- omit in toc -->
-
-- Information hierarchy: seat, boarding time and airports get priority.
-- Passenger name positioned to allow for longer names.
-- Broke `departure` into `date` and `boarding` time.
-- Headings are not uppercase, instead the information is (as most already is such as gate, flight number, seat).
-
-Broken up to sections as you travel through the airport from airport names, flight number and gate to the QR code to check-in then your class and seat.
-
-
-### Day 6 - Sign up Oauth + email
-
-Original vs my design:
-
-![original vs my design - sign up](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d5_zdszlu.png)
-
-🤖 [The code](6-sign_up/)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See it in action</a>
-
-#### UX redesign  <!-- omit in toc -->
-
-- Got rid of the allcaps buttons for readability.
-- positioned social icons next to the button text.
-- Added a heading for the email sign up along with a form for quick sign up.
-- Added the TOS link because I just **love** the law.
-- Following accessibility best practices the *Read our Terms and Service and Privacy Policy* link is not inside the checkbox.
-
-As you can see from the above design solution I'm not a fan of almost explicitly hiding features. On the original design the email sign up is so different in layout/design that it's easy to miss. But **to be true to business needs I did code another version**. And because I'm missing including Javascript in these designs I've added a few lines of JS to deal with switching `display:none` on the sign up form to `block` and it even transforms 🧙‍♂️ 
-
-![my alternate design - sign up](6-sign_up/design/mine.gif)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See this alternate sign up page in action</a>
-
-🤖 [The code](6-sign_up/index_v2.html)
-
-### Day 7 - Blog post
-
-The original design:
-
-![original design - Blog post](7-blog_post/design/original.png)
-
-My design:
-
-![my design - Blog post](7-blog_post/design/mine.png)
-
-🤖 [The code](7-blog_post/)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/7-blog_post/" target="_blank" rel="noopener noreferrer">See it in action</a>
-
-#### UX redesign  <!-- omit in toc -->
-
-The first design that I haven't meddled with at all (other than change the colour of the comment count which was way too light of a grey to pass WCAG guidelines).
-
-
-### Day 8 - A pink article
-
-The original design:
-
-![original design - pink article](8-pink_article/design/original.png)
-
-My design:
-
-![my design - pink article](8-pink_article/design/mine.png)
-
-🤖 [The code](8-pink_article/)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/8-pink_article/" target="_blank" rel="noopener noreferrer">See it in action</a>
-
-#### UX redesign  <!-- omit in toc -->
-
-- Once again, getting rid of the greys. Very unfortunate colour choice for a navigation.
-- Added indication of which page is active with an underline similar to the decorative line next to the article's title.
-- Made '*Tourism*' a link to what I assume is a category on the website anyhow.
-  
-### Day 9 - A digital wallet
+### Digital wallet
 
 Original vs my design:
 
@@ -225,7 +110,25 @@ Original vs my design:
 - Kept a visible scrollbar on both sides as an affordance to signify more content available if scrolled. Did make it a bit fancier looking though.
 - Added a - (minus) sign before money going out so colour is not the only visual feedback on the nature of a balance item.
 
-### Day 10 - Account settings
+### Blocked on Messenger
+
+Original vs my design:
+
+![original vs my design - blocked on Messenger](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d3_m1maz5.png)
+
+🤖 [The code](4-messenger/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/4-messenger/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+
+- Added a `blocked` status indicator icon next to the contact's name.
+- Full width system message.
+- Link to more info on being blocked *(with accessible text added on at the end to complete the text to: "Learn more about the blocked status.")*
+- Disabled the `input field` and `send button` as well.
+
+
+### Account settings
 
 Desgins side-by-side
 
@@ -247,7 +150,7 @@ Additional stuff (just the usual):
 - *grey's, not okay* for button colours as it just makes them look disabled
 - STOP SHOUTING AT USERS and help them read your stuff faster.
   
-### Day 11 - Folders
+### Folders
 
 Original design:
 
@@ -266,3 +169,94 @@ My design:
 - Just played around with the design a bit creating `:hover`, `:focus` and `:active` states.
 - The small triangle arrow on folders that have subfolders is animated/rotated on folder opening/closing.
 - Added some depth for the sub-folders with an inset dropshadow.
+
+### Payment method picker
+
+Original vs my design:
+
+![my design vs original for payment method picker](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d1_xvbvsp.png))
+
+🤖 [The code](2-payment_method/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/2-payment_method/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+
+- unchecked inputs' labels are still black; design suggested grey but that could potentially confuse users thinking the option is disabled
+- made the container narrower so the checkmark is closer to the label instead of miles away on the right
+- design called for all text to be uppercase which is hell on readability
+- checked label gets physically larger to give better feedback on it being selected
+
+### Boarding pass
+
+Original vs my design:
+
+![original vs my design - Boarding pass](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d4_ok3tck.jpg)
+
+🤖 [The code](5-boarding_pass/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/5-boarding_pass/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+
+- Information hierarchy: seat, boarding time and airports get priority.
+- Passenger name positioned to allow for longer names.
+- Broke `departure` into `date` and `boarding` time.
+- Headings are not uppercase, instead the information is (as most already is such as gate, flight number, seat).
+
+Broken up to sections as you travel through the airport: airport names, flight number, gate and QR code to check-in then your class and seat for boarding.
+
+### Blog post
+
+The original design:
+
+![original design - Blog post](7-blog_post/design/original.png)
+
+My design:
+
+![my design - Blog post](7-blog_post/design/mine.png)
+
+🤖 [The code](7-blog_post/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/7-blog_post/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+
+The first design that I haven't meddled with at all (other than change the colour of the comment count which was way too light of a grey to pass WCAG guidelines).
+
+### A pink article
+
+The original design:
+
+![original design - pink article](8-pink_article/design/original.png)
+
+My design:
+
+![my design - pink article](8-pink_article/design/mine.png)
+
+🤖 [The code](8-pink_article/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/8-pink_article/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+
+- Once again, getting rid of the greys. Very unfortunate colour choice for a navigation.
+- Added indication of which page is active with an underline similar to the decorative line next to the article's title.
+- Made '*Tourism*' a link to what I assume is a category on the website anyhow.
+  
+### Plan Picker
+
+Original vs my design:
+
+![original vs my design - plan picker](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d1_xvbvsp.png)
+
+🤖 [The code](1-plan_picker/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/1-plan_picker/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+
+- changed uppercase text to normal for readability
+- added an h1 to explain the selection
+- slightly larger text (suggested base font-size was 14px 🔬 which is waaaay too tiny)
+- more contrasting font colour for the description
