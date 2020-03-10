@@ -4,8 +4,7 @@
 
 I've decided to hone my FE skills a bit whilst **also practicing some UX Design by tweaking the designs** as well if and when needed.
 
-## Markup challenges <!-- omit in toc -->
-To improve HTML and CSS skills.
+## Markup challenges - Table of content <!-- omit in toc -->
 
 - [Sign up Oauth + email](#sign-up-oauth--email)
 - [Order thank you page](#order-thank-you-page)
