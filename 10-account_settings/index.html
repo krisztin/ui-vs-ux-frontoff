@@ -19,19 +19,31 @@
         <form action="" class="clearfix">
           <div class="form-bg">
             <label for="username">Username</label>
-            <input type="text" name="username" id="username" />
+            <input type="text" name="username" id="username" spellcheck="false" />
             <div class="row">
               <div>
                 <label for="firstName">First name</label>
-                <input type="text" name="firstName" id="firstName" />
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  autocomplete="given-name"
+                  spellcheck="false"
+                />
               </div>
               <div class="col--2nd">
                 <label for="lastName">Last name</label>
-                <input type="text" name="lastName" id="lastName" />
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  autocomplete="family-name"
+                  spellcheck="false"
+                />
               </div>
             </div>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" autocomplete="email" spellcheck="false" />
             <label for="bio">Bio</label>
             <textarea name="bio" id="bio" cols="40" rows="8"></textarea>
           </div>
