@@ -1,4 +1,4 @@
-# Frontloops Challenge <!-- omit in toc -->
+# Frontloops Challenge<!-- omit in toc -->
 
 [Frontloops](https://frontloops.io) is a front-end challenge site by Dimitry Belyaev, a Sr. FE Dev at Booking.com. As part of the challenge you get an image/video file of the final design then off you code.
 
@@ -43,6 +43,7 @@ As you can see from the above design solution I'm not a fan of almost explicitly
 🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/6-sign_up/" target="_blank" rel="noopener noreferrer">See this alternate sign up page in action</a>
 
 🤖 [The code](6-sign_up/index_v2.html)
+
 
 ### Order thank you page
 
@@ -90,6 +91,8 @@ Layout/accessibility:
 
 ```
 
+[Back to top](#frontloops-challenge)
+
 ### Digital wallet
 
 Original vs my design:
@@ -109,6 +112,8 @@ Original vs my design:
 - Kept a visible scrollbar on both sides as an affordance to signify more content available if scrolled. Did make it a bit fancier looking though.
 - Added a - (minus) sign before money going out so colour is not the only visual feedback on the nature of a balance item.
 
+[Back to top](#frontloops-challenge)
+
 ### Blocked on Messenger
 
 Original vs my design:
@@ -126,6 +131,7 @@ Original vs my design:
 - Link to more info on being blocked *(with accessible text added on at the end to complete the text to: "Learn more about the blocked status.")*
 - Disabled the `input field` and `send button` as well.
 
+[Back to top](#frontloops-challenge)
 
 ### Account settings
 
@@ -148,6 +154,8 @@ Bottom line is:
 Additional stuff (just the usual):
 - *grey's, not okay* for button colours as it just makes them look disabled
 - STOP SHOUTING AT USERS and help them read your stuff faster.
+
+[Back to top](#frontloops-challenge)
   
 ### Folders
 
@@ -169,6 +177,8 @@ My design:
 - The small triangle arrow on folders that have subfolders is animated/rotated on folder opening/closing.
 - Added some depth for the sub-folders with an inset dropshadow.
 
+[Back to top](#frontloops-challenge)
+
 ### Payment method picker
 
 Original vs my design:
@@ -185,6 +195,8 @@ Original vs my design:
 - made the container narrower so the checkmark is closer to the label instead of miles away on the right
 - design called for all text to be uppercase which is hell on readability
 - checked label gets physically larger to give better feedback on it being selected
+
+[Back to top](#frontloops-challenge)
 
 ### Boarding pass
 
@@ -205,6 +217,8 @@ Original vs my design:
 
 Broken up to sections as you travel through the airport: airport names, flight number, gate and QR code to check-in then your class and seat for boarding.
 
+[Back to top](#frontloops-challenge)
+
 ### Blog post
 
 The original design:
@@ -222,6 +236,8 @@ My design:
 #### UX redesign  <!-- omit in toc -->
 
 The first design that I haven't meddled with at all (other than change the colour of the comment count which was way too light of a grey to pass WCAG guidelines).
+
+[Back to top](#frontloops-challenge)
 
 ### A pink article
 
@@ -242,6 +258,8 @@ My design:
 - Once again, getting rid of the greys. Very unfortunate colour choice for a navigation.
 - Added indication of which page is active with an underline similar to the decorative line next to the article's title.
 - Made '*Tourism*' a link to what I assume is a category on the website anyhow.
+
+[Back to top](#frontloops-challenge)
   
 ### Plan Picker
 
@@ -263,3 +281,5 @@ My design:
 - added an h1 to explain the selection
 - slightly larger text (suggested base font-size was 14px 🔬 which is waaaay too tiny)
 - more contrasting font colour for the description
+
+[Back to top](#frontloops-challenge)
