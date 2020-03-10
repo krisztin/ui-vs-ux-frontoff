@@ -173,7 +173,7 @@ My design:
 
 Original vs my design:
 
-![my design vs original for payment method picker](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d1_xvbvsp.png))
+![my design vs original for payment method picker](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d1_xvbvsp.png)
 
 🤖 [The code](2-payment_method/)
 
@@ -245,9 +245,13 @@ My design:
   
 ### Plan Picker
 
-Original vs my design:
+Original design:
 
-![original vs my design - plan picker](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d1_xvbvsp.png)
+![original design - plan picker](1-plan_picker/design/l1s1.png)
+
+My design:
+
+![my design - plan picker](1-plan_picker/design/l1s1m.png)
 
 🤖 [The code](1-plan_picker/)
 
