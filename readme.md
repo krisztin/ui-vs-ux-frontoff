@@ -7,9 +7,10 @@ I've decided to hone my FE skills a bit whilst **also practicing some UX Design 
 ## Markup challenges - Table of content <!-- omit in toc -->
 
 - [Sign up Oauth + email](#sign-up-oauth--email)
-- [Order thank you page](#order-thank-you-page)
+- [Selling a shoe](#selling-a-shoe)
 - [Digital wallet](#digital-wallet)
 - [Blocked on Messenger](#blocked-on-messenger)
+- [Order thank you page](#order-thank-you-page)
 - [Account settings](#account-settings)
 - [Folders](#folders)
 - [Payment method picker](#payment-method-picker)
@@ -44,6 +45,66 @@ As you can see from the above design solution I'm not a fan of almost explicitly
 
 🤖 [The code](6-sign_up/index_v2.html)
 
+### Selling a shoe
+
+Original vs my design:
+
+![original vs my design for shoe product page](https://res.cloudinary.com/du2vvjrb5/image/upload/v1585680894/krisztin/uiux/d12_kt0cfo.png)
+
+🤖 [The code](12-shoe/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/12-shoe/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+- Generally don't really like carousels for a lot of reasons, chief of which is that it's a pain to make them accessible. Thankfully the <a href="https://van11y.net/" target="_blank" rel="noopener noreferrer">Vanilla-Accessibility (Van11y)</a> project exists which had made this much, much less complicated
+- The background number reflects the size of shoe selected 😎 (seriously, go ahead and try it)
+- On the subject of size: the original design had some confusing sizing. I went with the...more traditional one
+- There were way too many grey elements (Size, Amount and actual selectable sizes) which just screams inactive/disabled
+- Made the discount more significant with a background matching the shoe's colour along with a percentage signifier (which is a random number, didn't do the math)
+- Added an *+ Add to cart* button because people might want to buy two different sizes 🙄
+- Design-wise, I've toned down the colours around the shoe to make it pop more.
+
+[Back to top](#frontloops-challenge)
+
+### Digital wallet
+
+Original vs my design:
+
+![original vs my design - digital wallet](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d6_bsficy.png)
+
+🤖 [The code](9-wallet/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/9-wallet/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+
+- The active card got a more signified design.
+- As there are two screens, to avoid confusion, the active card number is also displayed under the 'Current Balance' title on the right.
+- I've added a few filters just for fun. And they actually work! Once again, I was missing a little JavaScript magic so I went ahead and done that.
+- Took off the confusing circle border from the + and - icons on incomes and expenditures because they looked like a button.
+- Kept a visible scrollbar on both sides as an affordance to signify more content available if scrolled. Did make it a bit fancier looking though.
+- Added a - (minus) sign before money going out so colour is not the only visual feedback on the nature of a balance item.
+
+[Back to top](#frontloops-challenge)
+
+### Blocked on Messenger
+
+Original vs my design:
+
+![original vs my design - blocked on Messenger](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d3_m1maz5.png)
+
+🤖 [The code](4-messenger/)
+
+🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/4-messenger/" target="_blank" rel="noopener noreferrer">See it in action</a>
+
+#### UX redesign  <!-- omit in toc -->
+
+- Added a `blocked` status indicator icon next to the contact's name.
+- Full width system message.
+- Link to more info on being blocked *(with accessible text added on at the end to complete the text to: "Learn more about the blocked status.")*
+- Disabled the `input field` and `send button` as well.
+
+[Back to top](#frontloops-challenge)
 
 ### Order thank you page
 
@@ -90,46 +151,6 @@ Layout/accessibility:
 <p class="a11ytxt">1, Castelli Arenberg Gel Gloves, £39</p>
 
 ```
-
-[Back to top](#frontloops-challenge)
-
-### Digital wallet
-
-Original vs my design:
-
-![original vs my design - digital wallet](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d6_bsficy.png)
-
-🤖 [The code](9-wallet/)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/9-wallet/" target="_blank" rel="noopener noreferrer">See it in action</a>
-
-#### UX redesign  <!-- omit in toc -->
-
-- The active card got a more signified design.
-- As there are two screens, to avoid confusion, the active card number is also displayed under the 'Current Balance' title on the right.
-- I've added a few filters just for fun. And they actually work! Once again, I was missing a little JavaScript magic so I went ahead and done that.
-- Took off the confusing circle border from the + and - icons on incomes and expenditures because they looked like a button.
-- Kept a visible scrollbar on both sides as an affordance to signify more content available if scrolled. Did make it a bit fancier looking though.
-- Added a - (minus) sign before money going out so colour is not the only visual feedback on the nature of a balance item.
-
-[Back to top](#frontloops-challenge)
-
-### Blocked on Messenger
-
-Original vs my design:
-
-![original vs my design - blocked on Messenger](https://res.cloudinary.com/du2vvjrb5/image/upload/v1583082027/krisztin/uiux/d3_m1maz5.png)
-
-🤖 [The code](4-messenger/)
-
-🧐 <a href="https://krisztin.github.io/ui-vs-ux-frontoff/4-messenger/" target="_blank" rel="noopener noreferrer">See it in action</a>
-
-#### UX redesign  <!-- omit in toc -->
-
-- Added a `blocked` status indicator icon next to the contact's name.
-- Full width system message.
-- Link to more info on being blocked *(with accessible text added on at the end to complete the text to: "Learn more about the blocked status.")*
-- Disabled the `input field` and `send button` as well.
 
 [Back to top](#frontloops-challenge)
 
