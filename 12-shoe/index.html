@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nike Flyknit</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./van11y-accessible-carrousel-aria.min.js"></script>
+  </head>
+  <body>
+    <main class="content-container row">
+      <div class="product-imagery__container">
+        <div class="product__imagery">
+          <img src="img/logo.png" alt="" class="logo" />
+
+          <!-- Carousel -->
+          <div class="product__features--container">
+            <div class="decortxt">36</div>
+            <div class="js-carrousel relative">
+              <div
+                class="js-carrousel__container mod--hidden"
+                data-carrousel-btn-previous-img="./img/left.svg"
+                data-carrousel-btn-next-img="./img/right.svg"
+                data-carrousel-btn-previous-text="Show previous"
+                data-carrousel-btn-next-text="Show next"
+                data-carrousel-prefix-class="product"
+                data-carrousel-span-text-class="invisible"
+                data-carrousel-transition="slide"
+                data-carrousel-existing-hx="h3"
+                data-carrousel-active-slide="2"
+              >
+                <div class="js-carrousel__content">
+                  <img src="img/preview2.png" alt="" class="product__image" />
+                </div>
+                <!--
+         -->
+                <div class="js-carrousel__content">
+                  <p class="product__feature" data-feature="1" tabindex="0">
+                    <span class="product__feature--icon">+</span>
+                    <span class="product__feature--txt">Overpriced</span>
+                  </p>
+                  <p class="product__feature" data-feature="2" tabindex="0">
+                    <span class="product__feature--icon">+</span>
+                    <span class="product__feature--txt">Slave labour</span>
+                  </p>
+                  <p class="product__feature" data-feature="3" tabindex="0">
+                    <span class="product__feature--icon">+</span>
+                    <span class="product__feature--txt">Buy me</span>
+                  </p>
+                  <img src="img/preview.png" alt="" class="product__image" />
+                </div>
+                <!--
+         -->
+                <div class="js-carrousel__content">
+                  <h3>nothing to see here</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Carousel -->
+        </div>
+      </div>
+      <div class="product__meta">
+        <h1>Nike Flyknit</h1>
+        <div class="row align--centre">
+          <p class="product__price--discount product__price">
+            $189.00
+          </p>
+          <div class="product__price" data-discounted="true">
+            <p class="discount--amount">60% off</p>
+            <p class="product__price--rrp">RRP $259.00</p>
+          </div>
+        </div>
+        <p class="product__description">
+          With a flexible upper placed directly on top of a radically reinvented Air cushioning
+          system, The Nike Air VaporMax defies conventional style and provides an unbelievably
+          light, bouncy and flexible feel.
+        </p>
+        <form class="order-form" action="#">
+          <fieldset>
+            <legend>Size</legend>
+            <input type="radio" name="size" id="size36" value="36" checked />
+            <label for="size36">36</label>
+            <input type="radio" name="size" id="size40" value="40" />
+            <label for="size40">40</label>
+            <input type="radio" name="size" id="size41" value="41" />
+            <label for="size41">41</label>
+            <input type="radio" name="size" id="size43" value="43" />
+            <label for="size43">43</label>
+            <input type="radio" name="size" id="size44" value="44" />
+            <label for="size44">44</label>
+            <input type="radio" name="size" id="size45" value="45" />
+            <label for="size45">45</label>
+          </fieldset>
+          <label class="quantity" for="productAmount">Quantity</label>
+          <button
+            class="quantity--btn"
+            data-quantity-btn-type="decrement"
+            aria-label="decrement quantity"
+          >
+            -
+          </button>
+          <input type="number" name="amount" id="productAmount" min="1" value="1" />
+          <button
+            class="quantity--btn"
+            data-quantity-btn-type="increment"
+            aria-label="increment quantity"
+          >
+            +
+          </button>
+          <div class="checkout--btns row">
+            <button type="submit" class="btn--primary">Buy now</button>
+            <button type="submit" class="btn--ghost">+ Add to cart</button>
+          </div>
+        </form>
+
+        <script>
+          quantityBtns = document.querySelectorAll('.quantity--btn')
+          radioSizeBtns = document.getElementsByName('size')
+          let i = 0
+          let j = 0
+
+          function changeQuantity(e) {
+            e.preventDefault()
+            let type = this.dataset.quantityBtnType
+            if (type === 'increment') {
+              document.getElementById('productAmount').stepUp()
+            } else {
+              document.getElementById('productAmount').stepDown()
+            }
+          }
+
+          function changeImgBg() {
+            imageBgElement = document.querySelector('.decortxt')
+            // grab the selected size from the radio button
+            let size = this.value
+            // update the bg with size
+            imageBgElement.innerText = size
+          }
+
+          for (i = 0; i < quantityBtns.length; i++) {
+            quantityBtns[i].addEventListener('click', changeQuantity)
+          }
+
+          for (j = 0; j < radioSizeBtns.length; j++) {
+            radioSizeBtns[j].addEventListener('click', changeImgBg)
+          }
+        </script>
+      </div>
+    </main>
+  </body>
+</html>
