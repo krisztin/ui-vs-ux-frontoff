@@ -242,7 +242,7 @@ section.payment-method {
 
 /* #2 add own checkmark */
 .payment-method input:checked + label:after {
-  content: url('https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/check_fjt7xp.svg');
+  content: url('https://res.cloudinary.com/du2vvjrb5/image/upload/v1677254982/frontloops/l1s2-paymeth/checkmark_nuttzv.svg');
   margin-left: auto;
 }
 
